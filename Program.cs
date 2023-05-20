@@ -4,12 +4,12 @@ class Program
 {
   static void Main(string[] args)
   {
-    string numOp;
+    string numop;
 
     do
     {
-      numOp = Console.ReadLine();
-      if (numOp == "+" || numOp == "-")
+      numop = Console.ReadLine();
+      if (numop == "+" || numop == "-")
       {
 
         int n = int.Parse(Console.ReadLine());
@@ -37,7 +37,7 @@ class Program
         {
           for (int j = 0; j < m; j++)
           {
-             switch (numOp)
+             switch (numop)
             {
               case "+":
                 num[i, j] = num[i, j] + num2[i, j];
@@ -58,7 +58,7 @@ class Program
         }
       }
 
-    } while (numOp == "+" || numOp == "-");
+    } while (numop == "+" || numop == "-");
 
   }
 
